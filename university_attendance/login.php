@@ -216,7 +216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   user-select: none;
   z-index: 9999;
 ">
-  &copy; 2025 <strong>University Attendance Management System</strong> | Developed by <strong>Muhanad Farah Abdirahman</strong> | All Rights Reserved.
+  &copy; 2025 <strong>University Attendance Management System</strong> | All Rights Reserved.
 </footer>
 
 

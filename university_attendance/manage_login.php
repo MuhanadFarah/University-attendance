@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$phone = "+252907440616";
+$phone = "muhanadfarah@gmail.com";
 $password = "Hanandez@123";
 
 $error = '';
@@ -124,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   user-select: none;
   z-index: 9999;
 ">
-  &copy; 2025 <strong>University Attendance Management System</strong> | Developed by <strong>Muhanad Farah Abdirahman</strong> | All Rights Reserved.
+  &copy; 2025 <strong>University Attendance Management System</strong> | All Rights Reserved.
 </footer>
 
 
@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form method="POST" autocomplete="off">
-    <input type="text" name="phone" placeholder="Phone number" required autocomplete="off">
+    <input type="text" name="phone" placeholder="Insert Your Email" required autocomplete="off">
     <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
     <button type="submit">Login</button>
 </form>

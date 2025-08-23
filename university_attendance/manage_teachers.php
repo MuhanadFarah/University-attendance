@@ -323,7 +323,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['fetch']) && $_GET['fetc
   user-select: none;
   z-index: 9999;
 ">
-  &copy; 2025 <strong>University Attendance Management System</strong> | Developed by <strong>Muhanad Farah Abdirahman</strong> | All Rights Reserved.
+  &copy; 2025 <strong>University Attendance Management System</strong> | All Rights Reserved.
 </footer>
 
 
@@ -365,7 +365,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['fetch']) && $_GET['fetc
               <th>ID</th>
               <th>Name</th>
               <th>Phone</th>
-              <th>Password (Hashed)</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -403,7 +402,6 @@ let table = $('#teachersTable').DataTable({
     { data: 'id' },
     { data: 'name' },
     { data: 'phone' },
-    { data: 'password' },
     {
       data: null,
       orderable: false,
@@ -444,7 +442,7 @@ let table = $('#teachersTable').DataTable({
     table.button().add(0, {
       extend: 'excelHtml5',
       title: 'Teachers List',
-      exportOptions: { columns: [0,1,2,3] }
+      exportOptions: { columns: [0,1,2,] }
     });
     table.button(0).trigger();
     table.button().remove();
